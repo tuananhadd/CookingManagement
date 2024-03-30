@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/recipe_list_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/recipeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/courseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeNameTextView"
+        android:text="Course"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseTextView"
+        android:text="Delete"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseTextView"
+        android:layout_toRightOf="@id/deleteButton"
+        android:layout_marginStart="16dp"
+        android:text="Update"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseTextView"
+        android:layout_toRightOf="@id/updateButton"
+        android:layout_marginStart="16dp"
+        android:text="View"
+        android:layout_marginTop="8dp"/>
+</RelativeLayout>
